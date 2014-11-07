@@ -1,0 +1,13 @@
+<head>
+    <!-- code to include the highcharts and jQuery libraries goes here -->
+
+    <!-- load_charts filter takes a comma-separated list of id's where -->
+    <!-- the charts need to be rendered to                             -->
+
+    {% load chartit %}
+    <!--weatherchart is the nametag in the render to response-->
+    {{ weatherchart|load_charts:"container" }}
+</head>
+<body>
+    <div id='container'> Chart will be rendered here </div>
+</body>
